@@ -31,3 +31,12 @@ For API calls and data handling, **Retrofit** is used to interact with remote se
 
 ### Coroutines
 The app uses **Kotlin Coroutines** for handling background tasks asynchrono
+![photo_2024-11-29_00-52-58](https://github.com/user-attachments/assets/850dcede-4952-4777-8b76-180a1c72c4f0)
+![photo_2024-11-29_00-52-55](https://github.com/user-attachments/assets/f15f0376-9f3e-413d-896b-ee6b36083eb0)
+![photo_2024-11-29_00-52-36](https://github.com/user-attachments/assets/4880490d-34ea-4fae-8de0-b1f7f4ec376c)
+![photo_2024-11-29_00-52-43](https://github.com/user-attachments/assets/573028e9-7423-46bf-86f6-506537f6a52d)
+![photo_2024-11-29_00-52-46](https://github.com/user-attachments/assets/8a528f58-b917-4909-b5e2-cbb5ba55e8c4)
+![photo_2024-11-29_00-52-49](https://github.com/user-attachments/assets/11e240ee-4597-42ec-aa73-3a31c053bc6d)
+![photo_2024-11-29_00-52-55](https://github.com/user-attachments/assets/a89a9e4e-3f36-4cff-b546-d12b12ef0741)
+
+

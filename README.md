@@ -8,6 +8,7 @@ Cinema Vault is a movie discovery app that allows users to explore trending movi
 - Get detailed information about movies, including **cast**, **ratings**, and **synopsis**.
 - **Seamless UI** built with **Jetpack Compose**.
 - **Real-time data** with **Retrofit** and **Coil** for image loading.
+- Offline Mode using Room Database for storing favorite movies and viewing them without an internet connection.
 
 ## Dependencies
 
@@ -28,6 +29,12 @@ For API calls and data handling, **Retrofit** is used to interact with remote se
 **Coil** is used for loading images in a Compose-friendly manner.
 
 - `implementation("io.coil-kt:coil-compose:2.7.0")`
+
+ ### Room Database (Local Storage)
+ Room Database is used to enable offline functionality and allow users to save their favorite movies for later viewing.
+ - implementation("androidx.room:room-runtime:2.5.2")
+- kapt("androidx.room:room-compiler:2.5.2")
+- implementation("androidx.room:room-ktx:2.5.2")
 
 ### Coroutines
 The app uses **Kotlin Coroutines** for handling background tasks asynchrono

@@ -9,10 +9,14 @@ import com.example.cinemavault.presentation.theme.CinemaVaultTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
+
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         setContent {
             CinemaVaultTheme {
 

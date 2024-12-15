@@ -1,5 +1,9 @@
 package com.example.cinemavault.di
 
+import android.app.Application
+import androidx.room.Room
+import com.example.cinemavault.data.local.dao.TrendingMoviesDao
+import com.example.cinemavault.data.local.data_base.TrendingMoviesDataBase
 import com.example.cinemavault.data.mapper.CategoriesMapper
 import com.example.cinemavault.data.mapper.DetailsMapper
 import com.example.cinemavault.data.mapper.MoviesMapper
@@ -57,16 +61,17 @@ object AppModule {
         mapper = categoriesMapper,
         api = api
     )
-
     @Singleton
     @Provides
     fun provideTrendingRepository(
         api: MoviesApi,
-        trendingMapper: TrendingMapper
+        trendingMapper: TrendingMapper,
+        dao: TrendingMoviesDao
 
     ): TrendingMoviesRepository = TrendingRepositoryImpl(
         trendingApi = api,
-        mapper = trendingMapper
+        mapper = trendingMapper,
+        dao = dao
     )
 
 
@@ -79,4 +84,26 @@ object AppModule {
         mapper = mapper,
         api = api
     )
+
+    @Singleton
+    @Provides
+    fun provideRoomDataBase(
+        application: Application
+    ): TrendingMoviesDataBase {
+        return Room.databaseBuilder(
+            context = application,
+            klass = TrendingMoviesDataBase::class.java,
+            name = "dp_name"
+        )
+            .build()
+    }
+
+
+    @Singleton
+    @Provides
+    fun provideDao(
+        roomDataBase: TrendingMoviesDataBase
+    ): TrendingMoviesDao {
+        return roomDataBase.movieDao()
+    }
 }

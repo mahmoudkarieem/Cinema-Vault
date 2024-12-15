@@ -1,9 +1,11 @@
 package com.example.cinemavault.domain.Model
 
+
 data class TrendingMoviesModel(
     val page: Int = 0,
-    val results: List<MovieTrendingItemModel> = emptyList()
-)
+    val results: List<MovieTrendingItemModel> = emptyList(),
+
+    )
 
 data class MovieTrendingItemModel(
     val id: Int = 0,
@@ -14,4 +16,6 @@ data class MovieTrendingItemModel(
     val genreIds: List<Int> = emptyList(),
     val voteAverage: Double = 0.0,
     val releaseDate: String = "",
-)
+
+
+    )

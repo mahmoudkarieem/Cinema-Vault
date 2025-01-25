@@ -47,3 +47,4 @@ The app uses **Kotlin Coroutines** for handling background tasks asynchrono
 ![photo_2024-11-29_00-52-55](https://github.com/user-attachments/assets/a89a9e4e-3f36-4cff-b546-d12b12ef0741)
 
 
+<!-- Failed to upload "Cinema Vault Video.mp4" -->
